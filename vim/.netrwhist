@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/bilg/.config'
+let g:netrw_dirhist_2='/home/bilg/.bash_completion.d'
+let g:netrw_dirhist_3='/home/bilg/.config/terminology/config/standard'
+let g:netrw_dirhist_4='/home/bilg/.vim'
