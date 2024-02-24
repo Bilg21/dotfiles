@@ -15,7 +15,9 @@ redTheme = {
         'textprompt':  '#44ff44',
         'textbattery': '#00aaaa',
         'highlight_method': 'block',
-    }
+        'font' : 'Yrsa, Bold',
+        'fontsize': 16,
+}
 
 greenTheme = {
         'focus':       '#00ff00',
@@ -30,7 +32,9 @@ greenTheme = {
         'textprompt':  '#ff44ff',
         'textbattery': '#aa00aa',
         'highlight_method': 'block',
-    }
+        'font' : 'Yrsa, Bold',
+        'fontsize': 16,
+}
 
 blueTheme = {
         'focus':       '#0088ff',
@@ -45,7 +49,9 @@ blueTheme = {
         'textprompt':  '#44ff44',
         'textbattery': '#00aaaa',
         'highlight_method': 'block',
-    }
+        'font' : 'Yrsa, Bold',
+        'fontsize': 16,
+}
 
 yellowTheme = {
         'focus':       '#ffee00',
@@ -60,7 +66,9 @@ yellowTheme = {
         'textprompt':  '#ff8866',
         'textbattery': '#00aaaa',
         'highlight_method': 'block',
-    }
+        'font' : 'Yrsa, Bold',
+        'fontsize': 16,
+}
 
 fancyYBGtheme = {
         'focus':       '#ffee00',
@@ -70,11 +78,41 @@ fancyYBGtheme = {
         'rootwindow':  '#200010',
         'foreground':  '#998800',
         'screenblur':  '#005588',
-        'background':  '#111624',
-        'text':        '#c0c0c0',
+        'background':  '#282c34',
+        'text':        '#dfdfdf', #'51afef',
         'textprompt':  '#ff8866',
         'textbattery': '#00aaaa',
         'highlight_method': 'block',
+        'font' : 'LiberationMono, Bold',
+        'fontsize': 16,
     }
 
+CozyTheme = {
+        'focus':       '#CAA9E0',
+        'blur':        '#1F1D2E',
+        'floatfocus':  '#CAA9E0',
+        'floatblur':   '#1F1D2E',
+        'rootwindow':  '#200010',
+        'foreground':  '#4B427E',
+        'screenblur':  '#353446',
+        'background':  '#282738',
+        'text':        '#dfdfdf', #'51afef',
+        'textprompt':  '#ff8866',
+        'textbattery': '#00aaaa',
+        'highlight_method': 'block',
+        'font' : 'LiberationMono, Bold',
+        'fontsize': 16,
+    }
 
+colors = [["#282c34", "#282c34"],
+          ["#1c1f24", "#1c1f24"],
+          ["#dfdfdf", "#dfdfdf"],
+          ["#ff6c6b", "#ff6c6b"],
+          ["#98be65", "#98be65"],
+          ["#da8548", "#da8548"],
+          ["#51afef", "#51afef"],
+          ["#c678dd", "#c678dd"],
+          ["#46d9ff", "#46d9ff"],
+          ["#a9a1e1", "#a9a1e1"]]
+
+transparent = "#00ffffff"

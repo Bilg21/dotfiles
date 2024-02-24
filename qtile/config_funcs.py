@@ -6,8 +6,11 @@ import subprocess
 import re
 import math
 import os
+import psutil
 
 import libqtile
+from libqtile import qtile
+from libqtile.config import hook
 
 
 def move_window_to_screen(screen_index):
@@ -181,3 +184,20 @@ def float_dialogs(window):
 def exec_poststart(theme):
     subprocess.call(['xsetroot', '-solid', theme['rootwindow']])
 
+def search():
+    qtile.cmd_spawn("rofi -show drun")
+
+def power():
+    qtile.cmd_spawn("sh -c ~/.config/rofi/scripts/power")
+
+def show_calendar():
+    if check_process_exists("gnome-calendar"):
+        qtile.cmd_spawn("pkill gnome-calendar")
+    else:
+        qtile.cmd_spawn("gnome-calendar")
+
+def check_process_exists(process_name):
+    for process in psutil.process_iter(['name']):
+        if process.info['name'] == process_name:
+            return True
+    return False
